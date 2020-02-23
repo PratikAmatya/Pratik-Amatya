@@ -1,0 +1,137 @@
+/* to add smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}
+/* to remove margin and padding between contents and browser border */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* properties set for body */
+body{
+    background-color:#564F6F;
+    font-family: 'Public Sans', sans-serif;
+}
+/* properties set for main div */
+main{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D1D7E0;
+    min-height: 655px;
+    height:100%;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+/* properties set for header */
+.header{
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width:90%;
+    color: #D1D7E0;
+    height:6rem;
+    background-color: #2D283E;
+    display: flex;
+    flex-direction: column;
+}
+/* properties set for info div */
+.info{
+    height:auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 0em;
+}
+/* properties set for img having class avatar */
+.avatar{
+    padding-left: 2.6em;
+    padding-top: 1em;
+    display: block;
+    height:3.4em;
+    width: auto;
+}
+/* properties set for a tag of headertext div */
+.headertext a{
+    text-decoration: none;
+    color: #D1D7E0;
+}
+/* properties set for when the mouse pointer hovers */
+.headertext a:hover{
+    color: white;
+}
+/* properties set for nav */
+.nav{
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* properties set for a tag of nav */
+.nav a{
+    text-decoration: none;
+    color: #D1D7E0;
+}
+/* properties set for when the mouse pointer hovers */
+.nav a:hover{
+    color:white;
+}
+/* properties set for img tag of nav div */
+.nav img{
+    height:1.7em;
+}
+/* properties set for div contents */
+.contents{
+    margin-top:6rem;
+    width:100%;
+    height:auto;
+}
+/* properties set for a tag of contents */
+.contents a{
+    text-decoration: none;
+    color: #564F6F;
+}
+/* properties set for intro div */
+.intro{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    color: #2D283E;
+}
+/* properties set for p tag in intro div */
+.intro p{
+    text-align:justify;
+    line-height: 1.4rem;
+    padding-left: 10px;
+    padding-right: 30px;
+    width:auto;
+}
+/* properties set for footer div */
+.footer{
+    background-color: #222629;
+    color:#D1D7E0; 
+    height:2.2rem;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+/* properties set for img of footer div */
+.footer img{
+    height:1em;
+}
+/* properties set for a tag of footer div */
+.footer a{
+    color: #D1D7E0;
+    text-decoration: none;
+}
+/* properties set for when the mouse pointer hovers */
+.footer a:hover{
+    color:white;
+}

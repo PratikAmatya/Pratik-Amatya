@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Pratik Amatya" content="portfolio">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+</head>
+<!-- this is an internal css -->
+<style>
+    /* this adds smooth scrolling to the web page */
+    html{
+        scroll-behavior: smooth;
+    }
+    /* this is used so that there is no gap between the contents and edges of the browser */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* this is used show that the contents of the body donot change when the size of the browser changes */
+    body{
+        background-color:#564F6F;
+        font-family: 'Public Sans', sans-serif; 
+    }
+    /* this is used to set the properties of the main tag */
+    main{
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #D1D7E0;
+        min-height:1000px;
+        height:100%;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+    }
+    /* Style the header: fixed position (always stay at the top) */
+    .header{
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        width:90%;
+        color: #D1D7E0;;
+        height:auto;
+        background-color: #2D283E;
+        display: flex;
+        flex-direction: column;
+    }
+    /* this specifies the proerties for info div */
+    .info{
+        height:auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    /* properties of progress container  */
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #6B6E70;
+    }
+    /* The progress bar (scroll indicator) */
+    .progress-bar {
+        height: 8px;
+        background: #4caf50;
+        width: 0%;  
+    }
+    /* properties for the avatar img */
+    .avatar{
+        padding-left: 2.6em;
+        padding-top: 1.6em;
+        display: block;
+        height:6em;
+        width: auto;
+    }
+    /* properties for the a tag */
+    .headertext a{
+        text-decoration: none;
+        color: #D1D7E0;
+    }
+    /* properties to be shown when mouse pointer is hovered */
+    .headertext a:hover{
+        color: white;
+    }
+    /* properties of box div */
+    .box{
+        position: relative;
+        font-size: 19px;
+        color:#2D283E;
+        width:75%;
+        padding:20px;
+        background:white;
+        height:auto;
+        margin: 50px auto;
+        line-height: 26px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    /* properties for the ul list */
+    ul{
+        margin-top: 40px;
+        margin-left: 14px;
+        display: block;
+        list-style-type: disc;
+    }
+    /* properties for the h2 in box div */
+    .box h2{
+        margin:0;
+        position:absolute;
+        top:12px;
+        left:-12px;
+        background:#2D283E ;
+        color: #D1D7E0;
+        font-size: 20px;
+        padding:4px 20px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+    }  
+    /* properties of the footer  */
+    .footer{
+        background-color: #222629;
+        color:#D1D7E0; 
+        height:2.2rem;
+        padding-top: 10px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 1.25rem;
+        text-align: center;
+        letter-spacing: 0.3rem;
+    }
+    /* specifies the height of the image in footer */
+    .footer img{
+        height:1em;
+    }
+    /* properties for the links in footer */
+    .footer a{
+        color: #D1D7E0;
+        text-decoration: none;
+    }
+    /* properties of footer when mouse pointer is hovered */
+    .footer a:hover{
+        color:white;
+    }
+    /* properties of nav bar */
+    .nav{
+        text-align: center;
+        display: block;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    /* properties of links in nav */
+    .nav a{
+        text-decoration: none;
+        color: #D1D7E0; 
+    }
+    /* properties shown when mouse pointer is hovered */
+    .nav a:hover{
+        color:white;
+    }
+    /* height of the img in nav div */
+    .nav img{
+        height:1.7em;
+    }
+    /* property of the span in active */
+    .active span{
+        color: #F3D250;
+    }
+</style>
+<body>
+    <!-- declaring main tag -->
+    <main>
+        <!-- declaring header division -->
+        <div class="header">
+            <!-- declaring info division -->
+            <div class="info">
+                <div class="photo" style="width: auto;height:120px;float:left">
+                    <img class="avatar" src="../img/avatar.png" alt="profilepic">
+                </div>
+                <div class="headertext" style="float: left; width:48%;height: 120px;text-align: left;padding-top: 2.6em;padding-left:1.5em ;" >
+                    <p style="font-size: 2em;">Pratik Amatya</p>
+                    <hr style="height:8px; visibility:hidden;" />
+                    <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <p style="font-size: 1em;">pratikamatya2@gmail.com</p>
+                    </a>
+                </div>
+                <!-- declaring nav divsion -->
+                <div class="nav" style="width: 9%;float: right;">
+                    <a href="../index.html" >
+                        <img src="../img/home.png" alt="home" >
+                        <br>
+                        <span>Home</span>
+                        </a>
+                </div>
+                <div class="nav" style="width: 9%;float: right;">
+                    <a href="#" class="active">
+                        <img src="../img/cv.png" alt="cv"  class="cv">
+                        <br>
+                        <span>Portfolio</span>
+                        </a>
+                </div>
+                <div class="nav" style="width: 9%;float: right;">
+                    <a href="blog.html" >
+                        <img src="../img/blog.png" alt="blog" >
+                        <br>
+                        <span>Blog</span>
+                        </a>
+                </div>
+                <div class="nav" style="width: 9%;float: right;">
+                    <a href="research.html" >
+                        <img src="../img/research.png" alt="research"  >
+                        <br>
+                        <span>Research</span>
+                    </a>
+                </div>
+                <div class="nav" style="width: 9%;float: right;">
+                    <a href="contact.html" >
+                        <img src="../img/contact.png" alt="contact" >
+                        <br>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+    </div>
+    <!-- inline css -->
+    <div class="boxes" style="margin-top: 10.5em;">
+        <div class="box">
+            <h2>Soft Skills</h2>
+            <!-- using ul tag to list the attributes -->
+            <ul>
+                <li>
+                    <p>
+                        Excellent written and verbal communication skills: English (fluent), Nepali (native),
+                        Newari (intermediate), Hindi (intermediate)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Enthusiastic, persistent and dependable
+                    </p>
+                </li>
+                <li>
+                    <p> 
+                        Knowledge in image editing, music theory
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Technical Skills</h2>
+            <!-- using ul tag to list the attributes -->
+            <ul>
+                <li>
+                    <p>
+                        Adept with Microsoft Office Suite
+                    </p>
+                </li>
+                <li>
+                    <p> 
+                        Proficient in Qbasic
+                    </p>
+                </li>
+                <li>
+                    <p> 
+                        Intermediate knowledge in Java,HTML,CSS
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Educational Background</h2>
+            <!-- using ul tag to list the attributes -->
+            <ul>
+                 <li>
+                    <p>
+                         1st year BSc (Hons) Computing <b>Currently</b> / Islington College    
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Ten Plus Two (+2) 2019 / GIHE Institute of Higher Education 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        SEE 2017 / GEMS School 
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Extracurricular Activities</h2>
+            <!-- using ul tag to list the attributes -->
+            <ul>
+                <li>
+                    <p>
+                        Singing Competition Award / GIHE Institute of Higher Education
+                    </p>
+                    <p>
+                         Third in the singing competition
+                    </p>
+                </li>
+                <li>
+                    <p>Research Exhibition Competition /  GIHE Institute of Higher Education</p>
+                    <p>Second , Project on Sound Wave Fire Extinguisher</p>
+                </li>
+                <li>
+                    <p>Certificate of Appreciation / GIHE Institute of Higher Education </p>
+                    <p>Class Representative</p>
+                </li>
+                <li>
+                    <p> English Presentation Competition / GIHE Institute of Higher Education </p>
+                    <p>Second in the english presentation competition </p>
+                </li>
+                <li>
+                    <p>Biology Presentation Competition / GIHE Institute of Higher Education </p>
+                    <p>Third in the biology presentation competition</p>
+                </li>
+                <li>
+                    <p>Chemistry Presentation Competition / GIHE Institute of Higher Education </p>
+                    <p>Third in the chemistry presentation competition </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- declaring footer div -->
+    <div class="footer">
+        <a href="https://www.facebook.com/">
+            <img src="../img/facebook.png" alt="facebook" width=auto class="home">  <b>Pratik Amatya <script>document.write(new Date().getFullYear());</script></b>
+        </a>
+    </div>
+</main>
+<script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+</script>
+</body>
+</html>
