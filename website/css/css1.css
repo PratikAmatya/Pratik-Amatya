@@ -1,0 +1,95 @@
+  /* this is used so that there is no gap between the contents and edges of the browser */
+*{
+    margin: 0;
+    padding:0;
+}
+/* this is used show that the contents of the body donot change when the size of the browser changes */
+body{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* this for the background color of the main tag */
+main{
+    background-color: #D1D7E0;
+}
+/* this is for the div adjustment */
+div{
+    box-sizing: border-box;
+}
+/* this is for the profile div     */
+.profile{
+    background-color:#2D283E;
+    color: #D1D7E0;
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+}
+/* this is for the links in profile div */
+.profile a{
+    text-decoration: none;
+    color: #D1D7E0;  
+}
+/* this specifies the properties for the a tag having class contact */
+.contact{
+    text-decoration: none;
+    color: #D1D7E0;
+}
+.contact:hover{
+    color: white;
+}
+/* this specifies properties of the img having profilepic class */
+.profilepic{
+    margin-top: 2rem;
+    height: 15rem;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* this specifies properties for name div */
+.name{
+    margin-top: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+/* this specifies margin at the top for home div */
+.home{
+    margin-top: 15px;
+}
+/* this specifies properties for navlink div */
+.navlink{
+    display: block;
+    padding-left: 13px;
+    padding-right: 30px;
+    color: #2D283E;
+    font-family: 'Roboto', sans-serif;
+    border-color: #4C495D;
+    border-bottom-style:solid;
+    width: 100%;
+    transition: 0.6s;
+    padding-top: 14px;
+    text-align: justify;
+}
+/* this specifies the properties when the mouse pointer is hovered  */
+.navlink:hover{
+    width: 100%;
+    border: none;
+    color:#D1D7E0;
+    background-color:#4C495D;
+    width: 60px;
+}
+/* this specifies properties for a tag of div navlink */
+.navlink a{
+    text-decoration: none;
+    color: #2D283E;
+}
+/* this is for footer */
+.footer{
+    height: 40px;
+    background-color: #564F6F; 
+    width: 100%;
+    line-height: 40px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.5rem;
+}

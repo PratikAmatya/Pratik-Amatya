@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Pratik Amatya" content="Contact Page">
+  <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <!-- external javascript -->
+    <script src="../js/js1.js"></script>
+</head>
+<!-- internal css -->
+<style>
+  /* adding smooth scroll */
+  html{
+    scroll-behavior: smooth;
+  }
+  /* avoiding gap between contents and brower screen edge */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  /* properties for body */
+  body{
+    background-color:#564F6F;
+    font-family: 'Public Sans', sans-serif;
+  }
+  /* properties for header div */
+  .header{
+    color: #564F6F;
+    font-size: 5rem;
+    font-family: 'Oswald', sans-serif;
+    padding: 4rem;
+  }
+  /* propeties of A tag in header div */
+  .header a{
+    text-decoration: none;
+    color: #564F6F;
+  }
+  /* properties for when mouse is hovered */
+  .header a:hover{
+    color: #8590AA;
+  }
+  /* properties for main */
+  main{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D1D7E0;
+    min-height: 655px;
+    height:100%;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* properties for nav div */
+  .nav{
+    text-align: center;
+    display: block;
+    margin: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: #564F6F;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding: 5px 5px;
+    height:auto;
+    width:4.5rem;
+  }
+  /* propeties of A tag in nav div */
+  .nav a{
+    text-decoration: none;
+    color: #D1D7E0;
+  }
+  /* properties for when mouse is hovered */
+  .nav a:hover{
+    color:white;
+  }
+  /* properties set for img of nav div */
+  .nav img{
+    height:1.5em;
+  }
+  /* properties set for contact-form div    */
+  .contact-form{
+    width: 85%;
+    height:100%;
+    min-height: 699px;
+    max-width: 600px;
+    background: #EDEAE5;
+    color: #564F6F;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    border:2px solid #564F6F;
+    margin-bottom: 30px;
+ }
+/* properties for txtb div */
+.txtb{
+  border:1px solid gray;
+  margin: 30px 0;
+  padding: 20px 18px;
+  border-radius: 8px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px;
+}
+/* properties for slidediv div */
+.slidediv{
+  border:1px solid gray;
+  margin: 30px 0;
+  padding: 20px 18px;
+  border-radius: 8px;
+  font-weight:bold;
+  width: 93%;
+  text-align: left;
+  font-size: 17px;
+}
+/* properties for slidecontainer div */
+.slidecontainer {
+  margin-top: 20px;
+  width: 100%;
+}
+/* properties set for slider class */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+/* properties for when mouse is hovered */
+.slider:hover {
+  opacity: 1;
+}
+/* this is an for the appearance of the thumb in range */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:  #564F6F;
+  cursor: pointer;
+}
+/* this is an extension of mozilla firefox */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #564F6F;
+  cursor: pointer;
+}
+/* properties set for input and textarea of txtb div */
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+  color: #564F6F;
+}
+/* properties for radio div */
+.radio{
+  width: 100%;
+  text-align: left;
+  display: block;
+  padding-top:10px;
+  padding-bottom: 20px;
+}
+/* properties for input tag of radio div */
+.radio input{
+  padding:3px;
+  width:auto;
+}
+/* properties of btn class */
+.btn{
+  display: inline-block;
+  background: #564F6F;
+  padding: 14px 0;
+  color:#D1D7E0;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+/* properties for when mouse is hovered */
+.btn:hover{
+  color:white;
+}
+/* properties of footer div */
+footer{
+  background-color: #222629;
+  color:#D1D7E0; 
+  height:2.2rem;
+  padding-top: 10px;
+  left: 0;
+  bottom: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+/* properties of img of footer div */
+footer img{
+  height:1em;
+}
+/* properties of A tag of footer tag */
+footer a{
+  color: #D1D7E0;
+  text-decoration: none;
+}
+/* properties for when mouse pointer is hovered */
+footer a:hover{
+  color:white;
+}
+/* properties for navbar div */
+.navbar{
+  z-index: 1;
+  margin-left: 70%;
+  width: 4rem;
+  height: 23rem;
+  margin-top: 150px;
+  position: fixed;
+}
+</style>
+<body>
+  <!-- declaring main tag -->
+  <main>
+    <!-- nav bar -->
+    <div class="navbar">
+      <div class="nav" >
+        <a href="../index.html" >
+            <img src="../img/home.png" alt="home">
+            <br>
+            <span>Home</span>
+        </a>
+      </div>
+      <div class="nav" >
+        <a href="portfolio.html">
+          <img src="../img/cv.png" alt="cv">
+          <br>
+          <span>Portfolio</span>
+        </a>
+      </div>
+      <div class="nav">
+        <a href="blog.html" >
+            <img src="../img/blog.png" alt="blog"   >
+            <br>
+            <span>Blog</span>
+        </a>
+      </div>
+      <div class="nav">
+        <a href="research.html" >
+          <img src="../img/research.png" alt="research"  >
+          <br>
+          <span>Research</span>
+        </a>
+      </div>
+      <div class="nav"  >
+        <a href="#" >
+          <img src="../img/contact.png" alt="contact"  >
+          <br>
+          <!-- inline css -->
+          <span style="color:#D6CE15; ">Contact</span>
+        </a>
+      </div>
+    </div>
+    <!-- declaring header division -->
+    <div class="header">
+      <img src="../img/contactlogo.png" alt="phone" style="height:6rem;float: left;"> <p>Contact me</p>
+      <p style=" font-family: 'Public Sans', sans-serif;font-size: 20px;padding-left: 100px;width: 80%";>
+        Please fill out the following form completely or email to: 
+        <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+          pratikamatya2@gmail.com
+        </a>
+        </p>
+    </div>
+    <!-- declaring form  -->
+    <form name="Form" onsubmit="return validateForm()">
+      <div class="contact-form"  >
+        <!-- declaring division for each field -->
+        <div class="txtb">
+          <label>Full Name :</label>
+          <input type="text" name="fname"  placeholder="Enter Your Name">
+        </div>
+        <div class="txtb">
+          <label>Email :</label>
+          <input type="email" name="email"  placeholder="Enter Your Email">
+          </div>
+          <div class="txtb">
+            <label>Phone Number :</label>
+            <input type="text" name="phone"  placeholder="Enter Your Phone Number">
+          </div>
+          <div class="slidediv">
+            <label>How much did you like the design of the web pages</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>Rating: <span id="demo"></span> / 100</p>
+                  </div>
+          </div>
+          <div class="txtb" style="padding-top: 10px;">
+              <label>Message Subject</label> 
+              <div class="radio">
+                  <div style="float: left;padding-right: 30px;">
+                      <input type="radio" name="subject"  value="Tips" checked> Tips 
+                  </div>
+                  <div style="float:left;padding-right: 30px;"> 
+                      <input type="radio" name="subject"  value="Query"> Query 
+                  </div>
+                  <div style="float: left;padding-right: 30px;">
+                    <input type="radio" name="subject" value="Complaint">  Complaint 
+                  </div>
+                </div>
+              </div>
+              <div class="txtb">
+                <label>Message :</label>
+                <textarea name="message"></textarea>
+              </div>
+              <input class="btn" type="submit" value="Submit">
+            </div>
+          </form>
+    <!-- declaring footer -->
+    <footer>
+      <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="facebook" width=auto class="home">  <b>Pratik Amatya <script>document.write(new Date().getFullYear());</script></script></b></a>
+    </footer>
+  </main>
+  <!-- script for displaying value of silder  -->
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+      
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+  </script>
+</body>
+</html>

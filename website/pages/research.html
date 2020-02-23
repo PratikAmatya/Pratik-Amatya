@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Pratik Amatya" content="research page">
+    <title>Research</title>
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+</head>
+<!-- internal css -->
+<style>
+    /* adding smooth croll  */
+    html{
+        scroll-behavior: smooth;
+    }
+    /* removing gap between contents and browser edge */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* properties for the body */
+    body{
+        background-color:#564F6F;
+        font-family: 'Public Sans', sans-serif;
+    }
+    /* setting properties for main */
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #D1D7E0;
+        min-height: 655px;
+        height:100%;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+    }
+    /* setting properties for header */
+    .header{
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        width:90%;
+        color: #D1D7E0;
+        height:6rem;
+        background-color: #2D283E;
+        display: flex;
+        flex-direction: column;
+    }
+    /* setting properties for info */
+    .info{
+        height:auto;
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 0em;
+    }
+    /* setting properties for img having class avatar */
+    .avatar{
+        padding-left: 2.6em;
+        padding-top: 1em;
+        display: block;
+        height:3.4em;
+        width: auto;
+    }
+    /* setting properties for a tag in div headertext */
+    .headertext a{
+            text-decoration: none;
+            color: #D1D7E0;
+    }
+    /* properties set for when the headertext is hovered */
+    .headertext a:hover{
+            color: white;
+    }
+    /* properties set for nav div */
+    .nav{
+        text-align: center;
+        display: block;
+        margin-top: 24px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    /* properties set for a tag of nav div */
+    .nav a{
+        text-decoration: none;
+        color: #D1D7E0;
+    }
+    /* properties set for when the mouse pointer is hovered */
+    .nav a:hover{
+        color:white;
+    }
+    /* properties set for img of nav div */
+    .nav img{
+        height:1.7em;
+    }
+    /* properties set for contents div */
+    .contents{
+        margin-top:6.8rem;
+        width:100%;
+        height:auto;
+        color:#564F6F;
+    }
+    /* properties set for when hovered */
+    .contents a:hover{
+        color: #4C495D;
+    }
+    /* properties set for p tag of div contents */
+    .contents p{
+        padding-left: 10px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    /* properties set for compare div */
+    .compare{
+        margin: 20px;
+    }
+    /* properties set for p tag of compare div */
+    .compare p{
+        text-align:justify;
+        line-height: 1.4rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        width:auto;
+    }
+    /* properties set for compared */
+    .compared{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    /* properties set for a tag of compared div */
+    .compared a{
+        text-decoration: none;
+        color:#564F6F;
+    }
+    /* properties set for img of images tag */
+    .images img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width:auto;
+        height:20rem;
+        border:4px solid grey;
+        border-radius: 10px;
+    }
+    /* properties set for img having class rb2 */
+    img.rb2 {
+        height: 70%;
+        width: 70%;
+    }
+    /* properties set for img having class rb1 */
+    img.rb1{
+        height:90%;
+        width: 90%; 
+    }
+    /* properties set for img having class rc */
+    img.rc{
+        height:54%;
+        width:54%;
+    }
+    /* properties set for footer div */
+    .footer{
+        background-color: #222629;
+        color:#D1D7E0; 
+        height:2.2rem;
+        padding-top: 10px;
+        width: 100%;
+        font-size: 1.25rem;
+        text-align: center;
+        letter-spacing: 0.3rem; 
+    }
+    /* properties set for img of footer div */
+    .footer img{
+        height:1em;
+    }
+    /* properties set for A tag of footer div */
+    .footer a{
+        color: #D1D7E0;
+        text-decoration: none;
+    }
+    /* properties set for footer div when hovered */
+    .footer a:hover{
+        color:white;
+    }
+</style>
+<body>
+    <!-- declaring main tag -->
+    <main>
+        <!-- declaring header div -->
+        <div class="header">
+            <!-- declaring info div -->
+            <div class="info">
+                <!-- internal links -->
+                <a href="#">
+                    <div class="photo" style="width: auto;height:120px;float:left">
+                        <img class="avatar" src="../img/research.png" alt="profilepic">
+                    </div>
+                    <div class="headertext" style="float: left; width:48%;height: 120px;text-align: left;padding-top: 2em;padding-left:1.5em ;" >
+                        <p style="font-size: 1.3em;color: #F3D250;">Research Section</p>
+                    </a>
+                    </div>
+             <!-- nav div -->
+            <div class="nav" style="width: 9%;float: right;">
+                <a href="../index.html" >
+                    <img src="../img/home.png" alt="home" >
+                    <br>
+                    <span>Home</span>
+                    </a>
+            </div>
+            <!-- nav div linking to portfolio page -->
+            <div class="nav" style="width: 9%;float: right;">
+                <a href="portfolio.html">
+                    <img src="../img/cv.png" alt="cv" >
+                    <br>
+                    <span>Portfolio</span>
+                </a>
+            </div>
+            <!-- nav div linking to blog page -->
+             <div class="nav" style="width: 9%;float: right;">
+                <a href="blog.html" >
+                    <img src="../img/blog.png" alt="blog" >
+                    <br>
+                    <span>Blog</span>
+                </a>
+            </div>
+            <div class="nav" style="width: 9%;float: right;">
+                <a href="contact.html" >
+                    <img src="../img/contact.png" alt="contact"  >
+                    <br>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- declaring contents div -->
+    <div class="contents">
+        <p>I have taken inspiration from mainly five websites. I have compared the websites to mine. They are listed below:</p>
+        <div class="compare">
+            <h2 style="padding-bottom: 20px;">
+                   1. Homepage 
+            </h2>
+            <div class="compared">
+                <div class="images" >
+                <a href="https://colorlib.com/wp/template/cvportfolio/">
+                    <img class="rc" src="../img/rc1.jpg" alt="left" >
+                    <br>
+                    <label>colorlib</label>
+                </a>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- div for images -->
+            <div class="images" >
+                <a href="../index.html">
+                    <img class="rc" src="../img/rc2.jpg" alt="right">
+                    <br>
+                    <label>Home</label>
+                </a>
+            </div>       
+            </div> 
+            <div style="padding-top: 10px;">
+            <p>
+                I have taken inspiration from this template posted in the colorlib. In the template, there is a box that shows the basic info of the person in a box in his porfolio which is centered. I have incorporated the design in my home page showing my current educational status with facebook page linked as well.
+            </p>
+            </div>
+         </div>
+         <!-- div for second section -->
+        <div class="compare">
+        <h2 style="padding-bottom: 20px;">
+               2. Navbar in Contact Page 
+        </h2>
+        <div class="compared"  style="height:360px;" >
+            <div class="images" style="float: left;width:50%">
+                <a href="https://visme.co/blog/website-color-schemes/">
+                    <img src="../img/ra1.jpg" alt="left">
+                    <br>
+                    <label>Visco</label>
+                </a>
+            </div>
+            <div class="images" style="float:left;width:50%">
+                <a href="contact.html">
+                <img src="../img/ra2.jpg" alt="right">
+                <br>
+                <label> Contact</label>
+            </a>
+            </div>       
+        </div> 
+        <div style="padding-top: 5px;">
+            <p >As we can clearly see in the pictures. They look similar but are different. The one on the left is the social media bar on the left. It's padding increases when we hover. But the nav bar of my contact page has no such padding when we hover. The current page is highlighted by coloring the text yellow in nav bar. And the nav bar is located on the right compare to the social media bar which is located on the left.</p>
+        </div>
+    </div>
+    <!-- div for 3rd section -->
+    <div class="compare">
+        <h2 style="padding-bottom: 20px;">
+               3. Navbar in Blog Page 
+        </h2>
+    <div class="compared">
+        <div class="images" >
+            <a href="https://thoughtbot.com/blog/transitions-and-transforms">
+                <img class="rb1" src="../img/rb1.jpg" alt="left" >
+                <br>
+                <label>thoughbot</label>
+            </a>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="images" >
+            <a href="blog.html">
+                <img class="rb2" src="../img/rb2.jpg" alt="right" >
+                <br>
+                <label>Blog</label>
+            </a>
+        </div>       
+    </div> 
+    <div style="padding-top: 10px;">
+        <p>
+            The navbar of my blog page is inspired from the navbar of the thoughtbot page. I have kept icons as well for the 
+            the users to easily understand and navigate. I have tried to make the navbar simple and minimalist.
+        </p>
+    </div>
+    </div>
+    <div class="compare">
+        <!-- div for 4th section -->
+        <h2 style="padding-bottom: 20px;">
+               4. Contact Page
+        </h2>
+        <div class="compared"  style="height:360px;" >
+            <div class="images" style="float: left;width:50%">
+                <a href="https://www.facebook.com/">
+                    <img src="../img/re1.jpg" alt="left">
+                    <br>
+                    <label>facebook login</label>
+                </a>
+            </div>
+            <div class="images" style="float:left;width:50%">
+                <a href="contact.html">
+                    <img src="../img/re2.jpg" alt="right">
+                    <br>
+                    <label> contact form</label>
+                </a>
+            </div>       
+        </div> 
+        <!-- inline css -->
+        <div style="padding-top: 5px;">
+            <p>
+                As we can clearly see in the pictures. They look similar but are different. The one on the left is facebook login page. The textbox are bigger. With placeholder being the thing you have to enter. I on the other hand, have not made the textbox bigger. I have hiiden its boder and made the border of the div that it is in and the label of it visible with rounded corners. I have also added a range slider so that the user can easily rate the design of my web pages. 
+            </p>
+        </div>
+    </div>
+    <!-- div for 5th section -->
+     <div class="compare">
+        <h2 style="padding-bottom: 20px;">
+               5. Footer  
+        </h2>
+        <div class="compared">
+            <div class="images" >
+                <a href="https://www.gems.edu.np/">
+                    <img class="rb1" src="../img/rd1.jpg" alt="left" >
+                    <br>
+                    <label>GEMS home page footer</label>
+                </a>
+                <br>
+                <br>
+            </div>
+            <div class="images" >
+                <a href="blog.html">
+                    <img class="rb2" src="../img/rd2.jpg" alt="right" >
+                    <br>
+                    <label>Footer</label>
+                </a>
+            </div>       
+        </div> 
+        <div style="padding-top: 10px;">
+            <p>
+                The footers of my pages are inspired from the footer of the GEMS home page. But I feel that the font size of the GEMS home page is too small which makes reading difficult. In my footer, I have used a larger font size which is centered and when clicked takes to the facebook page for contact. But due to privacy reason I have linked to facebook login page.    
+            </p>
+        </div>
+        </div>
+    </div>
+    <!-- declaring footer div -->
+    <div class="footer">
+        <!-- using external link as well as javascript to show the current year -->
+        <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="facebook" width=auto class="home">  <b>Pratik Amatya <script>document.write(new Date().getFullYear());</script></b></a>
+    </div>
+</main>
+</body>
+</html>
